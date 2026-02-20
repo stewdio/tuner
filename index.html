@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Web Tuner</title>	
+		<link rel="stylesheet" href="styles/typography.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		<script type="module" src="scripts/tonemapper.js"></script>
+	</head>
+	<body>
+		<div class="viewport">
+<!-- <pre>
+	
+	python3 -m http.server 8666
+	http://localhost:8666/index.html
+
+
+</pre> -->
+			<div id="container">
+				<canvas id="frequencies-graph"></canvas>
+				
+				<div id="note-labels">
+					<div name-index="0" ><span class="name-abc">C</span><span class="name-solfege">Do</span></div>
+					<div name-index="1" ><span class="name-abc">C</span><span class="name-solfege">Do</span><span class="modifier">#</span></div>
+					<div name-index="2" ><span class="name-abc">D</span><span class="name-solfege">Re</span></div>
+					<div name-index="3" ><span class="name-abc">D</span><span class="name-solfege">Re</span><span class="modifier">#</span></div>
+					<div name-index="4" ><span class="name-abc">E</span><span class="name-solfege">Mi</span></div>
+					<div name-index="5" ><span class="name-abc">F</span><span class="name-solfege">Fa</span></div>
+					<div name-index="6" ><span class="name-abc">F</span><span class="name-solfege">Fa</span><span class="modifier">#</span></div>
+					<div name-index="7" ><span class="name-abc">G</span><span class="name-solfege">Sol</span></div>
+					<div name-index="8" ><span class="name-abc">G</span><span class="name-solfege">Sol</span><span class="modifier">#</span></div>
+					<div name-index="9" ><span class="name-abc">A</span><span class="name-solfege">La</span></div>
+					<div name-index="10"><span class="name-abc">A</span><span class="name-solfege">La</span><span class="modifier">#</span></div>
+					<div name-index="11"><span class="name-abc">B</span><span class="name-solfege">Si</span></div>
+				</div>
+				<div id="note-slices"></div>
+			</div>
+			<div class="no-show">
+				<svg 
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					class="no-show">
+					<defs id="svg-defs">
+					</defs>
+				</svg>
+			</div>
+			<button id="start">Start</button>
+		</div>
+	</body>
+</html>
